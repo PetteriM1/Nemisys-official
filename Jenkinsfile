@@ -46,7 +46,6 @@ pipeline {
                 rtPublishBuildInfo (
                         serverId: "opencollab-artifactory"
                 )
-                step([$class: 'JavadocArchiver', javadocDir: 'target/site/apidocs', keepAll: false])
             }
         }
     }
